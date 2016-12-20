@@ -1,4 +1,7 @@
-class PagesController <ApplicationController
+class PagesController < ApplicationController
     def gome
     end
+    
+    def about
+    end    
 end
