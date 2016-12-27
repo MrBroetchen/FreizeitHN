@@ -18,13 +18,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a href="/" class="navbar-brand"> Freizeit HN</a>
-          
+          <%= link_to root_path , class: "navbar-brand" do %>
+            <i class="fa fa-group"> Freitzeit HN </i>
+          <% end %>
           
         </div>
         <div class="collapse navbar-collapse" id="main-nav-collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/about">Über uns </a> </li>
+            <li> <%= link_to "Über uns", about_path %> </li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div>

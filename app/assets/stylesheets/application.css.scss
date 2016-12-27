@@ -16,12 +16,15 @@
 
 @import 'bootstrap-sprockets';
 @import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
 
 
 h1, h2, h3 {
     font-family: 'Open Sans' , sans-serif;
 }
-.navbar, .home-callout, .inhalt{
+.navbar, .home-callout, .inhalt, .button-Schnuppern{
     // Gradiant provided by @_ighosh at uigradients.com
     
     background: #EDE574; /* fallback for old browsers */
@@ -31,15 +34,52 @@ h1, h2, h3 {
         
 }
 
-.navbar{
+//navschrift schwarz
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav li a {
+    color: black;
 }
 
+//NavBar hover schwarz mit weißer schrift
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-nav > li > a:hover{
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+}
+
+
+// Überschrift fitting
 .home-callout{
     margin-top: -20px;
     padding-bottom: 100px;
     padding-top: 125px;
+    
 }
 
+//Inhalt anpassungen
 .inhalt{
     margin-top: -10px;
+    padding-bottom: 75px;
 }
+
+
+// better logo
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: black;
+}
+
+
+.navbar-default .navbar-toggle{
+     border: 2px solid black;
+     &:hover, &:focus {
+    background-color: #a6a6a6;
+    
+    }
+}
+
